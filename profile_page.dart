@@ -44,7 +44,7 @@ class _ProfilePageState extends State<ProfilePage> {
     final theme = Theme.of(context);
 
     return Scaffold(
-      backgroundColor: theme.scaffoldBackgroundColor, // ✅ adapts to dark/light theme
+      backgroundColor: theme.scaffoldBackgroundColor,
       appBar: AppBar(
         title: const Text("Athlete Profile"),
         backgroundColor: theme.appBarTheme.backgroundColor ?? Colors.blueAccent,
@@ -67,12 +67,12 @@ class _ProfilePageState extends State<ProfilePage> {
                         if (!athleteData!.containsKey(key)) return const SizedBox.shrink();
 
                         return Card(
-                          color: theme.cardColor, // ✅ adapts to dark/light theme
+                          color: theme.cardColor,
                           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
                           elevation: 3,
                           margin: const EdgeInsets.symmetric(vertical: 6),
                           child: ListTile(
-                            leading: Icon(icon, color: Colors.blueAccent), // keep blue accent
+                            leading: Icon(icon, color: Colors.blueAccent),
                             title: Text(
                               label,
                               style: theme.textTheme.bodyMedium?.copyWith(
@@ -94,7 +94,7 @@ class _ProfilePageState extends State<ProfilePage> {
                     child: ElevatedButton.icon(
                       icon: const Icon(Icons.edit, color: Colors.white),
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.blueAccent, // ✅ fixed blue button
+                        backgroundColor: Colors.blueAccent,
                         padding: const EdgeInsets.symmetric(vertical: 14),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(12),
@@ -105,7 +105,7 @@ class _ProfilePageState extends State<ProfilePage> {
                           context,
                           MaterialPageRoute(builder: (_) => const EditProfilePage()),
                         ).then((_) {
-                          _getAthleteData(); // Refresh after editing
+                          _getAthleteData();
                         });
                       },
                       label: const Text(
@@ -113,7 +113,7 @@ class _ProfilePageState extends State<ProfilePage> {
                         style: TextStyle(
                           fontSize: 16,
                           fontWeight: FontWeight.bold,
-                          color: Colors.white, // ✅ white text
+                          color: Colors.white,
                         ),
                       ),
                     ),
@@ -123,4 +123,5 @@ class _ProfilePageState extends State<ProfilePage> {
             ),
     );
   }
+
 }
