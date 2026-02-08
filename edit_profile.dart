@@ -92,10 +92,10 @@ class _EditProfilePageState extends State<EditProfilePage> {
     final theme = Theme.of(context);
 
     return Scaffold(
-      backgroundColor: theme.scaffoldBackgroundColor, // ✅ adapts to dark/light
+      backgroundColor: theme.scaffoldBackgroundColor,
       appBar: AppBar(
         title: const Text("Edit Profile"),
-        backgroundColor: Colors.blueAccent, // ✅ fixed blue header
+        backgroundColor: Colors.blueAccent,
         centerTitle: true,
       ),
       body: athleteData == null
@@ -141,9 +141,9 @@ class _EditProfilePageState extends State<EditProfilePage> {
           child: SizedBox(
             width: double.infinity,
             child: ElevatedButton.icon(
-              icon: const Icon(Icons.save, color: Colors.white), // ✅ white icon
+              icon: const Icon(Icons.save, color: Colors.white),
               style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.blueAccent, // ✅ fixed blue button
+                backgroundColor: Colors.blueAccent,
                 padding: const EdgeInsets.symmetric(vertical: 14),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(12),
@@ -155,7 +155,7 @@ class _EditProfilePageState extends State<EditProfilePage> {
                 style: TextStyle(
                   fontSize: 16,
                   fontWeight: FontWeight.bold,
-                  color: Colors.white, // ✅ white text
+                  color: Colors.white,
                 ),
               ),
             ),
@@ -167,12 +167,12 @@ class _EditProfilePageState extends State<EditProfilePage> {
 
   Widget _buildTextField(TextEditingController controller, String label, IconData icon, ThemeData theme) {
     return Card(
-      color: theme.cardColor, // ✅ adapts to dark/light
+      color: theme.cardColor,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
       elevation: 3,
       margin: const EdgeInsets.symmetric(vertical: 6),
       child: ListTile(
-        leading: Icon(icon, color: Colors.blueAccent), // ✅ fixed blue icon
+        leading: Icon(icon, color: Colors.blueAccent),
         title: TextField(
           controller: controller,
           style: theme.textTheme.bodyMedium,
@@ -236,7 +236,7 @@ class _EditProfilePageState extends State<EditProfilePage> {
       elevation: 3,
       margin: const EdgeInsets.symmetric(vertical: 6),
       child: ListTile(
-        leading: Icon(icon, color: Colors.blueAccent), // ✅ fixed blue icon
+        leading: Icon(icon, color: Colors.blueAccent),
         title: DropdownButtonFormField<String>(
           value: value,
           decoration: InputDecoration(
@@ -249,4 +249,5 @@ class _EditProfilePageState extends State<EditProfilePage> {
       ),
     );
   }
+
 }
