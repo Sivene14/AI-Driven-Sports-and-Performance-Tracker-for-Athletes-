@@ -85,13 +85,13 @@ class _AssistantPageState extends State<AssistantPage> {
           ),
           Container(
             padding: const EdgeInsets.all(8),
-            color: theme.cardColor, // ✅ adapts to dark/light theme
+            color: theme.cardColor,
             child: Row(
               children: [
                 Expanded(
                   child: TextField(
                     controller: _controller,
-                    style: theme.textTheme.bodyMedium, // ✅ text adapts to theme
+                    style: theme.textTheme.bodyMedium,
                     decoration: InputDecoration(
                       hintText: "Type your message...",
                       hintStyle: theme.textTheme.bodyMedium?.copyWith(
@@ -118,4 +118,5 @@ class _AssistantPageState extends State<AssistantPage> {
       ),
     );
   }
+
 }
