@@ -27,7 +27,7 @@ class _RegisterPageState extends State<RegisterPage> {
   bool _obscurePassword = true;
   bool _obscureConfirmPassword = true;
 
-  // ✅ Match EditProfilePage lists
+  
   final List<String> sports = [
     "Football",
     "Basketball",
@@ -302,3 +302,4 @@ class _RegisterPageState extends State<RegisterPage> {
   }
 
 }
+
