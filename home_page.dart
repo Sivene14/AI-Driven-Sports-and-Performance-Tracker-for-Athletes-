@@ -22,7 +22,7 @@ class _HomePageState extends State<HomePage> {
     setState(() {
       _newsFuture = newFuture;
     });
-    await newFuture; // ✅ wait for completion
+    await newFuture;
   }
 
   @override
@@ -30,14 +30,14 @@ class _HomePageState extends State<HomePage> {
     final theme = Theme.of(context);
 
     return Scaffold(
-      backgroundColor: theme.scaffoldBackgroundColor, // ✅ adapts to dark/light
+      backgroundColor: theme.scaffoldBackgroundColor,
       appBar: AppBar(
         title: const Text(
           "Sports News",
           style: TextStyle(fontWeight: FontWeight.bold, fontSize: 22),
         ),
         centerTitle: true,
-        backgroundColor: Colors.blueAccent, // ✅ fixed blue header
+        backgroundColor: Colors.blueAccent,
         elevation: 4,
       ),
       body: RefreshIndicator(
@@ -57,7 +57,7 @@ class _HomePageState extends State<HomePage> {
                 itemBuilder: (context, index) {
                   final article = articles[index];
                   return Card(
-                    color: theme.cardColor, // ✅ adapts to dark/light
+                    color: theme.cardColor,
                     margin: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(12),
@@ -94,4 +94,5 @@ class _HomePageState extends State<HomePage> {
       ),
     );
   }
+
 }
