@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "363996159270",
+    "project_id": "sports-app-8c85c",
+    "storage_bucket": "sports-app-8c85c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:363996159270:android:7814dd2c70c92bda93b5e7",
+        "android_client_info": {
+          "package_name": "com.example.sports_tracker"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYLsQnPLWSr4ZcyJoBge4sfE6Vrm1VknE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
