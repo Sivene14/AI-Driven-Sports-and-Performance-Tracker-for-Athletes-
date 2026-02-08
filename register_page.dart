@@ -69,7 +69,7 @@ class _RegisterPageState extends State<RegisterPage> {
         "dob": _dob != null ? "${_dob!.day}/${_dob!.month}/${_dob!.year}" : "",
         "gender": _selectedGender ?? "",
         "sport": _selectedSport ?? "",
-        "experienceLevel": _selectedExperience ?? "", // ✅ matches EditProfilePage
+        "experienceLevel": _selectedExperience ?? "",
         "height": _heightController.text.trim(),
         "weight": _weightController.text.trim(),
       });
@@ -300,4 +300,5 @@ class _RegisterPageState extends State<RegisterPage> {
       ),
     );
   }
+
 }
